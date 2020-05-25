@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
@@ -27,3 +28,34 @@ var model = new Vue({
 
 </body>
 </html>
+=======
+<html>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<body>
+
+<h3>Página alterada no Github</h3>
+
+<div id="ui">
+  Temperatura: {{ temperatura }}
+  <p><button v-on:click="incTemperatura">Incrementa
+  </button></p>
+</div>
+
+<script>
+var model = new Vue({
+  el: '#ui',
+  data: {
+    temperatura: 60
+  },
+  methods: {
+    incTemperatura: function() {
+      this.temperatura++;
+    }
+  }
+})
+</script>
+
+</body>
+</html>
+>>>>>>> b4f1f14ca8951227e18b45b4015b9435e4d6540e
